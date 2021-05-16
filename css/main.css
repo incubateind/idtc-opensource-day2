@@ -1346,6 +1346,7 @@ input::-moz-focus-inner {
 .js .animate-this,
 .js .animate-intro {
 	opacity: 0;
+	text-align: left;
 }
 
 .oldie .animate-this,
@@ -2049,12 +2050,13 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	font-size: 2rem;
+	line-height: 1.5;
 }
 
 .about-profile p {
 	font-size: 1rem;
-	line-height: 1px;
+	line-height: 1.313;
 }
 
 /*  */
@@ -2113,7 +2115,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 4rem;
 }
 
 /*  */
