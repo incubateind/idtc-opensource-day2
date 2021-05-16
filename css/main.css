@@ -2050,7 +2050,7 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 1.5;
 }
 
@@ -2072,6 +2072,7 @@ header .header-logo a {
 
 .about-services p.lead {
 	color: #757575;
+	font-size: 1.5rem;
 }
 
 .about-services ul.services {
