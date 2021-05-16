@@ -2055,7 +2055,7 @@ header .header-logo a {
 }
 
 .about-profile p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.313;
 }
 
@@ -2098,8 +2098,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
 }
 
 /*  */
