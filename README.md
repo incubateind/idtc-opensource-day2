@@ -5,7 +5,7 @@
 **Step-3:** Find the issues in the code.<br>
 **Step-4:** Correct the code and make it look exactly the reference same as picture.<br>
 **Step-5:** After you complete your task and then you have to publish it on "GitHub Pages".<br>
-<br/>
+<br>
 To publish it on GitHub pages follow these steps:<br>
 Step-1: Go to "Settings".<br>
 Step-2: Then click on "Pages" on left menu list.<br>
