@@ -48,9 +48,9 @@
 }
 
 /* ===================================================================
- *  02. base style overrides - (_document-setup)
- *
- * ------------------------------------------------------------------- */
+*  02. base style overrides - (_document-setup)
+*
+* ------------------------------------------------------------------- */
 html {
 	font-size: 10px;
 }
@@ -89,8 +89,8 @@ body {
 }
 
 /* ------------------------------------------------------------------- 
- * links - (_document-setup) 
- * ------------------------------------------------------------------- */
+* links - (_document-setup) 
+* ------------------------------------------------------------------- */
 a,
 a:visited {
 	color: #f0a359;
@@ -107,9 +107,9 @@ a:focus {
 }
 
 /* ===================================================================
- *  03. typography & general theme styles - (_document-setup.scss) 
- *
- * ------------------------------------------------------------------- */
+*  03. typography & general theme styles - (_document-setup.scss) 
+*
+* ------------------------------------------------------------------- */
 h1,
 h2,
 h3,
@@ -347,8 +347,8 @@ hr {
 }
 
 /* ------------------------------------------------------------------- 
- * Lists - (_document-setup.scss)  
- * ------------------------------------------------------------------- */
+* Lists - (_document-setup.scss)  
+* ------------------------------------------------------------------- */
 ol {
 	list-style: decimal;
 }
@@ -407,8 +407,8 @@ dd {
 }
 
 /* ------------------------------------------------------------------- 
- * Spacing - (_document-setup)  
- * ------------------------------------------------------------------- */
+* Spacing - (_document-setup)  
+* ------------------------------------------------------------------- */
 button,
 .button {
 	margin-bottom: 1.2;
@@ -436,8 +436,8 @@ form,
 }
 
 /* ------------------------------------------------------------------- 
- * floated image - (_document-setup)  
- * ------------------------------------------------------------------- */
+* floated image - (_document-setup)  
+* ------------------------------------------------------------------- */
 img.pull-right {
 	margin: 1.5rem 0 0 3rem;
 }
@@ -447,8 +447,8 @@ img.pull-left {
 }
 
 /* ------------------------------------------------------------------- 
- * block grids paddings
- * ------------------------------------------------------------------- */
+* block grids paddings
+* ------------------------------------------------------------------- */
 .bgrid {
 	padding: 0 20px;
 }
@@ -478,8 +478,8 @@ img.pull-left {
 }
 
 /* ------------------------------------------------------------------- 
- * tables - (_document-setup.scss)  
- * ------------------------------------------------------------------- */
+* tables - (_document-setup.scss)  
+* ------------------------------------------------------------------- */
 table {
 	border-width: 0;
 	width: 100%;
@@ -519,8 +519,8 @@ td:last-child {
 }
 
 /* ------------------------------------------------------------------- 
- * pace.js styles - minimal  - (_document-setup.scss)
- * ------------------------------------------------------------------- */
+* pace.js styles - minimal  - (_document-setup.scss)
+* ------------------------------------------------------------------- */
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -545,9 +545,9 @@ td:last-child {
 
 
 /* ===================================================================
- *  04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- */
+*  04. preloader - (_preloader-1.scss)
+*
+* ------------------------------------------------------------------- */
 #preloader {
 	position: fixed;
 	top: 0;
@@ -617,9 +617,9 @@ td:last-child {
 
 
 /* ===================================================================
- *  04. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- */
+*  04. forms - (_forms.scss)
+*
+* ------------------------------------------------------------------- */
 fieldset {
 	border: none;
 }
@@ -748,8 +748,8 @@ label>input[type="radio"] {
 }
 
 /* -----------------------------------------------------------
- * Style Placeholder Text  
- * ----------------------------------------------------------- */
+* Style Placeholder Text  
+* ----------------------------------------------------------- */
 ::-webkit-input-placeholder {
 	color: #828282;
 }
@@ -773,8 +773,8 @@ label>input[type="radio"] {
 }
 
 /* -----------------------------------------------------------
- * Change Autocomplete styles in Chrome
- * ----------------------------------------------------------- */
+* Change Autocomplete styles in Chrome
+* ----------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
@@ -790,9 +790,9 @@ select:-webkit-autofill:focus {
 
 
 /* ===================================================================
- *  05.  buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- */
+*  05.  buttons - (_button-essentials.scss)
+*
+* ------------------------------------------------------------------- */
 .button,
 a.button,
 button,
@@ -913,13 +913,13 @@ input::-moz-focus-inner {
 
 
 /* ===================================================================
- *  06. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- */
+*  06. other components - (_others.scss)
+*
+* ------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------
- * alert box - (_alert-box.scss)
- * ------------------------------------------------------------------- */
+* alert box - (_alert-box.scss)
+* ------------------------------------------------------------------- */
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
 	position: relative;
@@ -957,11 +957,11 @@ input::-moz-focus-inner {
 }
 
 /* ------------------------------------------------------------------- 
- * additional typo styles - (_additional-typo.scss)
- * ------------------------------------------------------------------- */
+* additional typo styles - (_additional-typo.scss)
+* ------------------------------------------------------------------- */
 
 /* drop cap 
- * ----------------------------------------------- */
+* ----------------------------------------------- */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
@@ -975,7 +975,7 @@ input::-moz-focus-inner {
 }
 
 /* line definition style 
- * ----------------------------------------------- */
+* ----------------------------------------------- */
 .lining dt,
 .lining dd {
 	display: inline;
@@ -1002,7 +1002,7 @@ input::-moz-focus-inner {
 }
 
 /* dictionary definition style 
- * ----------------------------------------------- */
+* ----------------------------------------------- */
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -1023,17 +1023,17 @@ input::-moz-focus-inner {
 }
 
 /** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- */
+* Pull Quotes
+* -----------
+* markup:
+*
+* <aside class="pull-quote">
+*		<blockquote>
+*			<p></p>
+*		</blockquote>
+*	</aside>
+*
+* --------------------------------------------------------------------- */
 .pull-quote {
 	position: relative;
 	padding: 2.1rem 3rem 2.1rem 0px;
@@ -1069,17 +1069,17 @@ input::-moz-focus-inner {
 }
 
 /** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
+* Stats Tab
+* ---------
+* markup:
+*
+* <ul class="stats-tabs">
+*		<li><a href="#">[value]<em>[name]</em></a></li>
+*	</ul>
+*
+* Extend this object into your markup.
+*
+* --------------------------------------------------------------------- */
 .stats-tabs {
 	padding: 0;
 	margin: 3rem 0;
@@ -1119,9 +1119,9 @@ input::-moz-focus-inner {
 }
 
 /**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
+* skillbars - (_skillbars.scss)
+* -------------------------------------------------------------------
+*/
 .skill-bars {
 	list-style: none;
 	margin: 6rem 0 3rem;
@@ -1216,53 +1216,53 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent50 {
-	width: 10%;
+	width: 50%;
 }
 
 .skill-bars li .percent55 {
-	width: 15%;
+	width: 55%;
 }
 
 .skill-bars li .percent60 {
-	width: 90%;
+	width: 60%;
 }
 
 .skill-bars li .percent65 {
-	width: 25%;
+	width: 65%;
 }
 
 .skill-bars li .percent70 {
-	width: 10%;
+	width: 70%;
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
-	width: 20%;
+	width: 80%;
 }
 
 .skill-bars li .percent85 {
-	width: 8.5%;
+	width: 85%;
 }
 
 .skill-bars li .percent90 {
-	width: 9%;
+	width: 90%;
 }
 
 .skill-bars li .percent95 {
-	width: 5%;
+	width: 95%;
 }
 
 .skill-bars li .percent100 {
-	width: 0%;
+	width: 100%;
 }
 
 /* ===================================================================
- *  07. common and reusable styles 
- *
- * ------------------------------------------------------------------- */
+*  07. common and reusable styles 
+*
+* ------------------------------------------------------------------- */
 .section-intro {
 	text-align: center;
 	position: relative;
@@ -1299,9 +1299,9 @@ input::-moz-focus-inner {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * section-intro
- * ------------------------------------------------------------------- */
+* responsive:
+* section-intro
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	.section-intro h1 {
 		font-size: 4.2rem;
@@ -1356,9 +1356,9 @@ input::-moz-focus-inner {
 
 
 /* ===================================================================
- *  08. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  08. header styles - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 header {
 	width: 100%;
 	height: auto;
@@ -1375,8 +1375,8 @@ header .row {
 }
 
 /* ------------------------------------------------------------------- 
- * header logo - (_layout.css) 
- * ------------------------------------------------------------------- */
+* header logo - (_layout.css) 
+* ------------------------------------------------------------------- */
 header .header-logo {
 	position: absolute;
 	left: 26px;
@@ -1409,8 +1409,8 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * menu trigger - (_layout.css) 
- * ------------------------------------------------------------------- */
+* menu trigger - (_layout.css) 
+* ------------------------------------------------------------------- */
 #header-menu-trigger {
 	display: block;
 	position: fixed;
@@ -1489,8 +1489,8 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * off-canvas menu - (_layout.scss) 
- * ------------------------------------------------------------------- */
+* off-canvas menu - (_layout.scss) 
+* ------------------------------------------------------------------- */
 #menu-nav-wrap {
 	background: #111111;
 	color: rgba(255, 255, 255, 0.25);
@@ -1639,9 +1639,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * header section 
- * ------------------------------------------------------------------- */
+* responsive:
+* header section 
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	header .header-logo {
 		top: 27px;
@@ -1663,9 +1663,9 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  09. home - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  09. home - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #home {
 	background: #151515;
 	width: 100%;
@@ -1791,7 +1791,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
@@ -1837,9 +1837,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * home section 
- * ------------------------------------------------------------------- */
+* responsive:
+* home section 
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
 	.home-content-tablecell h3 {
 		font-size: 2.1rem;
@@ -1972,14 +1972,15 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  10. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  10. about - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #about {
 	position: relative;
 	padding: 10.8rem 0 10.8rem;
 	background-color: #FFFFFF;
 	min-height: 700px;
+	font-family: "librebaskerville-bold", serif;
 }
 
 #about h3 {
@@ -2036,6 +2037,7 @@ header .header-logo a {
 	width: 50%;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: "montserrat-regular", sans-serif;
 }
 
 .about-profile {
@@ -2053,11 +2055,9 @@ header .header-logo a {
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+	font-size: 1.3rem;
 }
 
-/*  */
 
 .about-profile .about-profile-bg {
 	display: none;
@@ -2096,8 +2096,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 14px;
+	line-height: 2rem;
 }
 
 /*  */
@@ -2113,7 +2113,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 7rem;
 }
 
 /*  */
@@ -2135,9 +2135,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * about 
- * ------------------------------------------------------------------- */
+* responsive:
+* about 
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	.about-profile {
 		padding-right: 5rem;
@@ -2242,9 +2242,9 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  11. skills - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  11. skills - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #skills {
 	background-color: #1f0e01;
 	background-image: url(../images/skills-bg.jpg);
@@ -2326,9 +2326,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * skills
- * ------------------------------------------------------------------- */
+* responsive:
+* skills
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	#skills [class="col-skills"] {
 		width: 75%;
@@ -2363,9 +2363,9 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  12. credentials - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  12. credentials - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #credentials {
 	background: #FFFFFF;
 	position: relative;
@@ -2452,9 +2452,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * credentials
- * ------------------------------------------------------------------- */
+* responsive:
+* credentials
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	#credentials .left {
 		padding-right: 20px;
@@ -2509,9 +2509,9 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  13. portfolio - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #portfolio {
 	background: #EBEBEB;
 	min-height: 800px;
@@ -2541,8 +2541,8 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * masonry entries - (_layout.css) 
- * ------------------------------------------------------------------- */
+* masonry entries - (_layout.css) 
+* ------------------------------------------------------------------- */
 .bricks-wrapper .item-wrap {
 	position: relative;
 	overflow: hidden;
@@ -2699,8 +2699,8 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * Light Gallery Overrides - (_layout.css) 
- * ------------------------------------------------------------------- */
+* Light Gallery Overrides - (_layout.css) 
+* ------------------------------------------------------------------- */
 .lg-sub-html {
 	padding: 12px 20% 15px;
 }
@@ -2753,9 +2753,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- */
+* responsive:
+* portfolio
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:600px) {
 	#portfolio .bricks-wrapper .brick {
 		float: none;
@@ -2766,9 +2766,9 @@ header .header-logo a {
 
 
 /* ===================================================================
- *  14. stats - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  14. stats - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #stats {
 	background-color: #111111;
 	position: relative;
@@ -2834,9 +2834,9 @@ header .header-logo a {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * stats
- * ------------------------------------------------------------------- */
+* responsive:
+* stats
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	#stats .stat:nth-child(n) {
 		border: none;
@@ -2847,9 +2847,9 @@ header .header-logo a {
 
 
 /* ===================================================================
- *  15. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  15. contact - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 #contact {
 	background-color: #111111;
 	background-image: url(../images/profile-bg.jpg);
@@ -3091,8 +3091,8 @@ header .header-logo a {
 }
 
 /* --------------------------------------------------------------- 
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- */
+* loader animation - (_layout.scss)
+* --------------------------------------------------------------- */
 .s-loader {
 	margin: 1.2rem auto 3rem;
 	width: 70px;
@@ -3160,9 +3160,9 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  16. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+*  16. footer - (_layout.scss)
+*
+* ------------------------------------------------------------------- */
 footer {
 	padding-top: 4.2rem;
 	padding-bottom: 4.2rem;
@@ -3245,9 +3245,9 @@ footer .footer-social li:last-child {
 }
 
 /* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
+* responsive:
+* footer
+* ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	#go-top {
 		bottom: 0;
