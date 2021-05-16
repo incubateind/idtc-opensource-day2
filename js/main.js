@@ -29,13 +29,13 @@
   };
 
   /* FitVids
-	------------------------------------------------------ */
+  ------------------------------------------------------ */
   var ssFitVids = function () {
     $(".fluid-video-wrapper").fitVids();
   };
 
-  /*	Masonry
-	------------------------------------------------------ */
+  /*  Masonry
+  ------------------------------------------------------ */
   var ssMasonryFolio = function () {
     var containerBricks = $(".bricks-wrapper");
 
@@ -47,8 +47,8 @@
     });
   };
 
-  /*	Light Gallery
-	------------------------------------------------------- */
+  /*  Light Gallery
+  ------------------------------------------------------- */
   var ssLightGallery = function () {
     $("#folio-wrap").lightGallery({
       showThumbByDefault: false,
@@ -176,7 +176,7 @@
   };
 
   /* Alert Boxes
-  	------------------------------------------------------- */
+    ------------------------------------------------------- */
   var ssAlertBoxes = function () {
     $(".alert-box").on("click", ".close", function () {
       $(this).parent().fadeOut(500);
