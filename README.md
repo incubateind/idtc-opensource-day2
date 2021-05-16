@@ -13,4 +13,3 @@ Step-3: Under the "Source" section select your branch (Usually it's the main bra
 After following the steps you will have the GitHub pages link.  <br>
 Note: After completing this task you will have your own Portfolio Page published on GitHub pages.  <br>
   <br>
-![image](https://storage.googleapis.com/incind/idtc-day2-task-minspNieBZ.png)
