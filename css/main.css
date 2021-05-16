@@ -88,8 +88,8 @@ body {
 	padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * links - (_document-setup) 
+/* -------------------------------------------------------------------
+ * links - (_document-setup)
  * ------------------------------------------------------------------- */
 a,
 a:visited {
@@ -107,7 +107,7 @@ a:focus {
 }
 
 /* ===================================================================
- *  03. typography & general theme styles - (_document-setup.scss) 
+ *  03. typography & general theme styles - (_document-setup.scss)
  *
  * ------------------------------------------------------------------- */
 h1,
@@ -346,8 +346,8 @@ hr {
 	height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * Lists - (_document-setup.scss)  
+/* -------------------------------------------------------------------
+ * Lists - (_document-setup.scss)
  * ------------------------------------------------------------------- */
 ol {
 	list-style: decimal;
@@ -406,8 +406,8 @@ dd {
 	margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * Spacing - (_document-setup)  
+/* -------------------------------------------------------------------
+ * Spacing - (_document-setup)
  * ------------------------------------------------------------------- */
 button,
 .button {
@@ -435,8 +435,8 @@ form,
 	margin-bottom: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
- * floated image - (_document-setup)  
+/* -------------------------------------------------------------------
+ * floated image - (_document-setup)
  * ------------------------------------------------------------------- */
 img.pull-right {
 	margin: 1.5rem 0 0 3rem;
@@ -446,7 +446,7 @@ img.pull-left {
 	margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * block grids paddings
  * ------------------------------------------------------------------- */
 .bgrid {
@@ -477,8 +477,8 @@ img.pull-left {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tables - (_document-setup.scss)  
+/* -------------------------------------------------------------------
+ * tables - (_document-setup.scss)
  * ------------------------------------------------------------------- */
 table {
 	border-width: 0;
@@ -518,7 +518,7 @@ td:last-child {
 	-webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * pace.js styles - minimal  - (_document-setup.scss)
  * ------------------------------------------------------------------- */
 .pace {
@@ -748,7 +748,7 @@ label>input[type="radio"] {
 }
 
 /* -----------------------------------------------------------
- * Style Placeholder Text  
+ * Style Placeholder Text
  * ----------------------------------------------------------- */
 ::-webkit-input-placeholder {
 	color: #828282;
@@ -956,11 +956,11 @@ input::-moz-focus-inner {
 	color: #bba31b;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * additional typo styles - (_additional-typo.scss)
  * ------------------------------------------------------------------- */
 
-/* drop cap 
+/* drop cap
  * ----------------------------------------------- */
 .drop-cap:first-letter {
 	float: left;
@@ -974,7 +974,7 @@ input::-moz-focus-inner {
 	color: #151515;
 }
 
-/* line definition style 
+/* line definition style
  * ----------------------------------------------- */
 .lining dt,
 .lining dd {
@@ -1001,7 +1001,7 @@ input::-moz-focus-inner {
 	margin-left: -0.2em;
 }
 
-/* dictionary definition style 
+/* dictionary definition style
  * ----------------------------------------------- */
 .dictionary-style dt {
 	display: inline;
@@ -1022,7 +1022,7 @@ input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -1068,7 +1068,7 @@ input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -1216,51 +1216,51 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent50 {
-	width: 10%;
+	width: 50%;
 }
 
 .skill-bars li .percent55 {
-	width: 15%;
+	width: 55%;
 }
 
 .skill-bars li .percent60 {
-	width: 90%;
+	width: 60%;
 }
 
 .skill-bars li .percent65 {
-	width: 25%;
+	width: 65%;
 }
 
 .skill-bars li .percent70 {
-	width: 10%;
+	width: 70%;
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
-	width: 20%;
+	width: 80%;
 }
 
 .skill-bars li .percent85 {
-	width: 8.5%;
+	width: 85%;
 }
 
 .skill-bars li .percent90 {
-	width: 9%;
+	width: 90%;
 }
 
 .skill-bars li .percent95 {
-	width: 5%;
+	width: 95%;
 }
 
 .skill-bars li .percent100 {
-	width: 0%;
+	width: 100%;
 }
 
 /* ===================================================================
- *  07. common and reusable styles 
+ *  07. common and reusable styles
  *
  * ------------------------------------------------------------------- */
 .section-intro {
@@ -1298,7 +1298,7 @@ input::-moz-focus-inner {
 	text-align: center;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * section-intro
  * ------------------------------------------------------------------- */
@@ -1351,7 +1351,7 @@ input::-moz-focus-inner {
 .oldie .animate-this,
 .oldie .animate-intro .no-cssanimations .animate-this,
 .no-cssanimations .animate-intro {
-	opacity: 1;
+	opacity: 0;
 }
 
 
@@ -1374,8 +1374,8 @@ header .row {
 	position: relative;
 }
 
-/* ------------------------------------------------------------------- 
- * header logo - (_layout.css) 
+/* -------------------------------------------------------------------
+ * header logo - (_layout.css)
  * ------------------------------------------------------------------- */
 header .header-logo {
 	position: absolute;
@@ -1408,8 +1408,8 @@ header .header-logo a {
 	transition: all 0.5s ease-in-out;
 }
 
-/* ------------------------------------------------------------------- 
- * menu trigger - (_layout.css) 
+/* -------------------------------------------------------------------
+ * menu trigger - (_layout.css)
  * ------------------------------------------------------------------- */
 #header-menu-trigger {
 	display: block;
@@ -1488,8 +1488,8 @@ header .header-logo a {
 	bottom: -9px;
 }
 
-/* ------------------------------------------------------------------- 
- * off-canvas menu - (_layout.scss) 
+/* -------------------------------------------------------------------
+ * off-canvas menu - (_layout.scss)
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
 	background: #111111;
@@ -1638,9 +1638,9 @@ header .header-logo a {
 	-webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * header section 
+ * header section
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	header .header-logo {
@@ -1733,6 +1733,7 @@ header .header-logo a {
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 	margin: 0 0 0 .3rem;
+	text-align: left;
 }
 
 /*  */
@@ -1742,6 +1743,7 @@ header .header-logo a {
 	font-size: 2.2rem;
 	line-height: 1.5;
 	color: #FFFFFF;
+	text-align: left;
 }
 
 /*  */
@@ -1791,7 +1793,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+
 }
 
 /*  */
@@ -1836,9 +1838,9 @@ header .header-logo a {
 
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * home section 
+ * home section
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
 	.home-content-tablecell h3 {
@@ -2049,12 +2051,12 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+	font-size: 1.25rem;
+
 }
 
 /*  */
@@ -2113,7 +2115,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 5rem;
 }
 
 /*  */
@@ -2131,12 +2133,12 @@ header .header-logo a {
 }
 
 .about-services ul.services .service-item {
-	padding-left: 8rem;
+	padding-left: 10rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * about 
+ * about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	.about-profile {
@@ -2325,7 +2327,7 @@ header .header-logo a {
 	background: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * skills
  * ------------------------------------------------------------------- */
@@ -2451,7 +2453,7 @@ header .header-logo a {
 	margin-bottom: 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * credentials
  * ------------------------------------------------------------------- */
@@ -2540,8 +2542,8 @@ header .header-logo a {
 	clear: both;
 }
 
-/* ------------------------------------------------------------------- 
- * masonry entries - (_layout.css) 
+/* -------------------------------------------------------------------
+ * masonry entries - (_layout.css)
  * ------------------------------------------------------------------- */
 .bricks-wrapper .item-wrap {
 	position: relative;
@@ -2698,8 +2700,8 @@ header .header-logo a {
 	transform: translateX(0);
 }
 
-/* ------------------------------------------------------------------- 
- * Light Gallery Overrides - (_layout.css) 
+/* -------------------------------------------------------------------
+ * Light Gallery Overrides - (_layout.css)
  * ------------------------------------------------------------------- */
 .lg-sub-html {
 	padding: 12px 20% 15px;
@@ -2752,7 +2754,7 @@ header .header-logo a {
 	font-family: "montserrat-regular", sans-serif;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- */
@@ -2833,7 +2835,7 @@ header .header-logo a {
 	margin-left: -40px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * stats
  * ------------------------------------------------------------------- */
@@ -3090,7 +3092,7 @@ header .header-logo a {
 	color: #FFFFFF;
 }
 
-/* --------------------------------------------------------------- 
+/* ---------------------------------------------------------------
  * loader animation - (_layout.scss)
  * --------------------------------------------------------------- */
 .s-loader {
@@ -3244,7 +3246,7 @@ footer .footer-social li:last-child {
 	color: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
