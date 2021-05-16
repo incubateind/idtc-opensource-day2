@@ -1232,11 +1232,11 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent70 {
-	width: 10%;
+	width: 70%;
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
@@ -1244,15 +1244,15 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent85 {
-	width: 8.5%;
+	width: 85%;
 }
 
 .skill-bars li .percent90 {
-	width: 9%;
+	width: 90%;
 }
 
 .skill-bars li .percent95 {
-	width: 5%;
+	width: 95%;
 }
 
 .skill-bars li .percent100 {
@@ -1728,7 +1728,7 @@ header .header-logo a {
 
 .home-content-tablecell h3 {
 	font-family: "montserrat-bold", sans-serif;
-	font-size: 2.2rem;
+	font-size: 2.3rem;
 	color: rgba(255, 255, 255, 0.35);
 	text-transform: uppercase;
 	letter-spacing: .15rem;
@@ -1739,8 +1739,8 @@ header .header-logo a {
 
 .home-content-tablecell h1 {
 	font-family: "librebaskerville-bold", serif;
-	font-size: 2.2rem;
-	line-height: 1.5;
+	font-size: 5rem;
+	line-height: 1.7;
 	color: #FFFFFF;
 }
 
@@ -1750,6 +1750,7 @@ header .header-logo a {
 	display: inline-block;
 	list-style: none;
 	margin: 4.8rem 0 0 0;
+	
 }
 
 .home-content-tablecell .home-section-links li {
@@ -1761,6 +1762,7 @@ header .header-logo a {
 	color: rgba(255, 255, 255, 0.35);
 	margin-right: 1.5rem;
 	margin-bottom: .6rem;
+	
 }
 
 .home-content-tablecell .home-section-links li:last-child {
@@ -1791,7 +1793,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
@@ -2049,12 +2051,13 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+	font-size: 2rem;
+	line-height: 3.5rem;
+
 }
 
 /*  */
@@ -2096,8 +2099,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 1.6rem;
+	line-height: 3.8rem;
 }
 
 /*  */
@@ -2113,7 +2116,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 5rem;
 }
 
 /*  */
@@ -2797,7 +2800,7 @@ header .header-logo a {
 #stats .stat h5 {
 	color: #FFFFFF;
 	margin-top: 1.5rem;
-	font-size: 0.4rem;
+	font-size: 1.6rem;
 }
 
 /*  */
