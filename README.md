@@ -1,6 +1,6 @@
 # idtc-opensource-day2
 
-## URL To My PortFolio ~ [Click](https://priyanshu-hawk.github.io/MyPortfolio/)
+## URL To My PortFolio ~ [Click](https://priyanshu-hawk.github.io/idtc-opensource-day2/)
 
 **Step-1:** Fork the repository.<br/>
 **Step-2:** Look at the reference picture provided.<br/>
