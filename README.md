@@ -1,1 +1,0 @@
-# idtc-opensource-day2
