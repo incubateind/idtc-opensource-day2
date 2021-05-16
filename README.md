@@ -1,6 +1,6 @@
 # idtc-opensource-day2
 # My Portfolio 
-https://deepankarvarma.github.io/
+https://deepankarvarma.github.io/ <br>
 **Step-1:** Fork the repository.<br/>
 **Step-2:** Look at the reference picture provided.<br/>
 **Step-3:** Find the issues in the code.<br/>
