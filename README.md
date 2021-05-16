@@ -1,5 +1,7 @@
 # idtc-opensource-day2
-
+# ------------------------------------
+Link to my GitHub Page:- https://tushark39.github.io/idtc-opensource-day2/
+# ------------------------------------
 **Step-1:** Fork the repository.<br/>
 **Step-2:** Look at the reference picture provided.<br/>
 **Step-3:** Find the issues in the code.<br/>
