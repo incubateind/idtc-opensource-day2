@@ -1236,7 +1236,7 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
@@ -1247,16 +1247,16 @@ input::-moz-focus-inner {
 	width: 8.5%;
 }
 
-.skill-bars li .percent90 {
-	width: 9%;
-}
-
-.skill-bars li .percent95 {
-	width: 5%;
+.skill-bars li .percent100 {
+	width: 100%;
 }
 
 .skill-bars li .percent100 {
-	width: 0%;
+	width: 100%;
+}
+
+.skill-bars li .percent70 {
+	width: 70%;
 }
 
 /* ===================================================================
@@ -1377,36 +1377,6 @@ header .row {
 /* ------------------------------------------------------------------- 
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
-header .header-logo {
-	position: absolute;
-	left: 26px;
-	top: 30px;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	-webkit-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
-}
-
-header .header-logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	border: none;
-	width: 100px;
-	height: 100px;
-	background: url("https://storage.googleapis.com/incind/IncubateINDijvFrGz") no-repeat center;
-	background-size: 100px 100px;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
 
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
@@ -1670,7 +1640,7 @@ header .header-logo a {
 	background: #151515;
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/intro-bg.jpg);
+	background-image: url(../images/intro-bg.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -2005,7 +1975,7 @@ header .header-logo a {
 	height: 100%;
 	background: #EBEBEB;
 	width: 50%;
-	background-image: url(../images/profile-bg.jpg);
+	background-image: url(../images/profile-bg.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -2053,8 +2023,8 @@ header .header-logo a {
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+	font-size: medium;
+	/* line-height: 1px; */
 }
 
 /*  */
@@ -2094,10 +2064,10 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services li p {
-	margin-bottom: 1.5rem;
+	/* margin-bottom: 1.5rem; */
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 18px;
+	line-height: 3rem;
 }
 
 /*  */
@@ -2113,7 +2083,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 6rem;
 }
 
 /*  */
@@ -2227,7 +2197,7 @@ header .header-logo a {
 	}
 
 	.about-services ul.services .icon-wrap i {
-		font-size: 6rem;
+		font-size: 7rem;
 	}
 
 	.about-services ul.services .service-item {
@@ -2852,7 +2822,7 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 #contact {
 	background-color: #111111;
-	background-image: url(../images/profile-bg.jpg);
+	background-image: url(../images/profile-bg.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
