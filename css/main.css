@@ -1346,6 +1346,10 @@ input::-moz-focus-inner {
 .js .animate-this,
 .js .animate-intro {
 	opacity: 0;
+	text-align: left;
+}
+.tem{
+	text-align: center !important;
 }
 
 .oldie .animate-this,
@@ -1739,7 +1743,7 @@ header .header-logo a {
 
 .home-content-tablecell h1 {
 	font-family: "librebaskerville-bold", serif;
-	font-size: 2.2rem;
+	font-size: 5.3rem;
 	line-height: 1.5;
 	color: #FFFFFF;
 }
@@ -1750,6 +1754,7 @@ header .header-logo a {
 	display: inline-block;
 	list-style: none;
 	margin: 4.8rem 0 0 0;
+	padding-right: 620px;
 }
 
 .home-content-tablecell .home-section-links li {
@@ -1979,7 +1984,7 @@ header .header-logo a {
 	position: relative;
 	padding: 10.8rem 0 10.8rem;
 	background-color: #FFFFFF;
-	min-height: 700px;
+	min-height: 1250px;
 }
 
 #about h3 {
@@ -2006,6 +2011,7 @@ header .header-logo a {
 	background: #EBEBEB;
 	width: 50%;
 	background-image: url(../images/profile-bg.jpg);
+
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -2049,12 +2055,12 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	font-size: 2.1rem;
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+
+	line-height:32px;
 }
 
 /*  */
@@ -2096,8 +2102,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 15px;
+	line-height: 3.11rem;
 }
 
 /*  */
@@ -2110,6 +2116,10 @@ header .header-logo a {
 	color: #4C2405;
 }
 
+.img {
+	padding-right: 30px !important;
+	font-size: 50px !important;
+}
 /*  */
 
 .about-services ul.services .icon-wrap i {
@@ -2302,10 +2312,12 @@ header .header-logo a {
 #skills .section-intro h3 {
 	color: rgba(255, 255, 255, 0.35);
 	color: #7c3b08;
+	text-align: left;
 }
 
 #skills .section-intro h1 {
 	color: #FFFFFF;
+	text-align: left;
 }
 
 #skills .skill-bars {
@@ -2380,6 +2392,7 @@ header .header-logo a {
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 	position: relative;
+	text-align: left;
 }
 
 #credentials .credentials-content h2::before {
@@ -2422,6 +2435,7 @@ header .header-logo a {
 	position: relative;
 	padding-left: 8rem;
 	margin-bottom: 4.2rem;
+	text-align: left;
 }
 
 #credentials .timeline-ico {
@@ -2797,7 +2811,7 @@ header .header-logo a {
 #stats .stat h5 {
 	color: #FFFFFF;
 	margin-top: 1.5rem;
-	font-size: 0.4rem;
+	font-size: 1.5rem;
 }
 
 /*  */
@@ -2806,7 +2820,7 @@ header .header-logo a {
 
 #stats .stat h3 {
 	color: #7c3b08;
-	font-size: 8.8rem;
+	font-size: 5rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin: 1.5rem 0 0 0;
