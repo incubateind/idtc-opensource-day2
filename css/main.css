@@ -143,18 +143,19 @@ h6,
 	margin-bottom: 1.2rem;
 }
 
-h1,
+/* h1,
 .h01 {
 	font-size: 3.1rem;
 	line-height: 1.35;
 	letter-spacing: -.1rem;
-}
+} */
 
+/* The above code has been commented out to remove overriding of features*/
 @media only screen and (max-width:600px) {
 
 	h1,
 	.h01 {
-		font-size: 2.6rem;
+		/* font-size: 2.6rem; */
 		letter-spacing: -.07rem;
 	}
 }
@@ -167,19 +168,19 @@ h2,
 
 h3,
 .h03 {
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	line-height: 1.5;
 }
 
 h4,
 .h04 {
-	font-size: 1.7rem;
+	/* font-size: 1.7rem; */
 	line-height: 1.76;
 }
 
 h5,
 .h05 {
-	font-size: 1.4rem;
+	/* font-size: 1.4rem; */
 	line-height: 1.7;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -187,7 +188,7 @@ h5,
 
 h6,
 .h06 {
-	font-size: 1.3rem;
+	/* font-size: 1.3rem; */
 	line-height: 1.85;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -1788,13 +1789,20 @@ header .header-logo a {
 	animation: vertical 3s ease infinite;
 }
 
-/*  */
-
+/* Commenting out this code to replace with my own */
+/*
 .home-bottom-text {
 	text-align: right;
 }
-
+*/
 /*  */
+
+/* Aligned text in Home Text to Left*/
+.col-twelve
+{
+	text-align: left;
+	size: 5rem;
+}
 
 
 /* vertical animation */
@@ -2048,13 +2056,13 @@ header .header-logo a {
 
 
 .about-profile p.lead {
-	color: #636363;
+	color: #645353;
 	font-size: 3rem;
 }
 
 .about-profile p {
 	font-size: 1rem;
-	line-height: 1px;
+	/* line-height: 1px; */ /* We do not need this code */
 }
 
 /*  */
@@ -2097,7 +2105,7 @@ header .header-logo a {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
 	font-size: 10px;
-	line-height: 1rem;
+	/* line-height: 1rem; */ /* We do not need this code */
 }
 
 /*  */
@@ -2131,7 +2139,8 @@ header .header-logo a {
 }
 
 .about-services ul.services .service-item {
-	padding-left: 8rem;
+	padding-left: 12rem;
+	font-size: 2.8rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2519,6 +2528,10 @@ header .header-logo a {
 	padding: 12rem 0 15rem;
 }
 
+#portfolio .col-twelve
+{
+	text-align: center; /* Added this line to comply with requirements */
+}
 #portfolio .bricks-wrapper:before,
 #portfolio .bricks-wrapper:after {
 	content: "";
@@ -2797,7 +2810,7 @@ header .header-logo a {
 #stats .stat h5 {
 	color: #FFFFFF;
 	margin-top: 1.5rem;
-	font-size: 0.4rem;
+	/* font-size: 0.4rem; */
 }
 
 /*  */
@@ -2806,7 +2819,7 @@ header .header-logo a {
 
 #stats .stat h3 {
 	color: #7c3b08;
-	font-size: 8.8rem;
+	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin: 1.5rem 0 0 0;
@@ -2883,6 +2896,11 @@ header .header-logo a {
 
 #contact .section-intro p.lead {
 	color: rgba(255, 255, 255, 0.3);
+}
+
+#contact .col-twelve
+{
+	text-align: center; /* Added this to align as per requirements*/
 }
 
 /* contact form */
@@ -3172,11 +3190,13 @@ footer {
 	position: relative;
 }
 
+
 footer .footer-social {
 	list-style: none;
 	display: inline-block;
 	margin-left: 0;
 	margin-bottom: 9rem;
+	text-align: center; /*Added this*/
 }
 
 footer .footer-social li {
@@ -3199,6 +3219,11 @@ footer .footer-social li a:focus {
 
 footer .footer-social li:last-child {
 	margin-right: 0;
+}
+
+footer .col-twelve
+{
+	text-align: center;
 }
 
 #go-top {
