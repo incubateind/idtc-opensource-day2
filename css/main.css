@@ -1216,47 +1216,47 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent50 {
-	width: 10%;
+	width: 50%;
 }
 
 .skill-bars li .percent55 {
-	width: 15%;
+	width: 55%;
 }
 
 .skill-bars li .percent60 {
-	width: 90%;
+	width: 60%;
 }
 
 .skill-bars li .percent65 {
-	width: 25%;
+	width: 65%;
 }
 
 .skill-bars li .percent70 {
-	width: 10%;
+	width: 70%;
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
-	width: 20%;
+	width: 80%;
 }
 
 .skill-bars li .percent85 {
-	width: 8.5%;
+	width: 85%;
 }
 
 .skill-bars li .percent90 {
-	width: 9%;
+	width: 90%;
 }
 
 .skill-bars li .percent95 {
-	width: 5%;
+	width: 95%;
 }
 
 .skill-bars li .percent100 {
-	width: 0%;
+	width: 100%;
 }
 
 /* ===================================================================
@@ -1337,6 +1337,7 @@ input::-moz-focus-inner {
 
 .wide {
 	max-width: 1300px;
+	font-family: "montserrat-regular";
 }
 
 .narrow {
@@ -1346,6 +1347,7 @@ input::-moz-focus-inner {
 .js .animate-this,
 .js .animate-intro {
 	opacity: 0;
+	
 }
 
 .oldie .animate-this,
@@ -1739,7 +1741,7 @@ header .header-logo a {
 
 .home-content-tablecell h1 {
 	font-family: "librebaskerville-bold", serif;
-	font-size: 2.2rem;
+	font-size: 5.2rem;
 	line-height: 1.5;
 	color: #FFFFFF;
 }
@@ -1791,7 +1793,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
@@ -2018,6 +2020,7 @@ header .header-logo a {
 	width: 94%;
 	max-width: 1300px;
 	margin: 0 auto;
+	font-family: "montserrat-regular";
 }
 
 .about-wrap:before,
@@ -2054,7 +2057,7 @@ header .header-logo a {
 
 .about-profile p {
 	font-size: 1rem;
-	line-height: 1px;
+	/* line-height: 1px; */
 }
 
 /*  */
@@ -2097,7 +2100,7 @@ header .header-logo a {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
 	font-size: 10px;
-	line-height: 1rem;
+	line-height: 2.5rem;
 }
 
 /*  */
@@ -2113,7 +2116,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 5rem;
 }
 
 /*  */
