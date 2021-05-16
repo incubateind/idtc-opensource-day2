@@ -639,7 +639,6 @@ select {
   padding: 1.5rem 0;
   border: 0;
   outline: none;
-  vertical-align: middle;
   color: #313131;
   font-family: 'montserrat-regular', sans-serif;
   font-size: 1.5rem;
@@ -1503,7 +1502,6 @@ header .header-logo a {
   z-index: 800;
   overflow-y: auto;
   -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
