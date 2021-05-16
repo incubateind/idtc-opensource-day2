@@ -1379,8 +1379,10 @@
   * ------------------------------------------------------------------- */
  header .header-logo {
 	 position: absolute;
-	 left: 26px;
-	 top: 30px;
+	 image-resolution: 900px;
+	 left: 16px;
+	 top: 10px;
+	 bottom: 10px;
 	 -moz-transition: all 1s ease-in-out;
 	 -o-transition: all 1s ease-in-out;
 	 -webkit-transition: all 1s ease-in-out;
@@ -1396,7 +1398,6 @@
 	 border: none;
 	 width: 100px;
 	 height: 100px;
-	 background: url("https://storage.googleapis.com/incind/IncubateINDijvFrGz") no-repeat center;
 	 background-size: 100px 100px;
 	 font: 0/0 a;
 	 text-shadow: none;
