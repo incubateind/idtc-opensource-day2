@@ -812,7 +812,7 @@ input[type="button"] {
 	color: #222222;
 	text-decoration: none;
 	cursor: pointer;
-	text-align: center;
+	text-align: center !important;
 	white-space: nowrap;
 	border: none;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1216,47 +1216,47 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .percent50 {
-	width: 10%;
+	width: 50%;
 }
 
 .skill-bars li .percent55 {
-	width: 15%;
+	width: 55%;
 }
 
 .skill-bars li .percent60 {
-	width: 90%;
+	width: 60%;
 }
 
 .skill-bars li .percent65 {
-	width: 25%;
+	width: 65%;
 }
 
 .skill-bars li .percent70 {
-	width: 10%;
+	width: 70%;
 }
 
 .skill-bars li .percent75 {
-	width: 15%;
+	width: 75%;
 }
 
 .skill-bars li .percent80 {
-	width: 20%;
+	width: 80%;
 }
 
 .skill-bars li .percent85 {
-	width: 8.5%;
+	width: 85%;
 }
 
 .skill-bars li .percent90 {
-	width: 9%;
+	width: 90%;
 }
 
 .skill-bars li .percent95 {
-	width: 5%;
+	width: 95%;
 }
 
 .skill-bars li .percent100 {
-	width: 0%;
+	width: 100%;
 }
 
 /* ===================================================================
@@ -1346,6 +1346,7 @@ input::-moz-focus-inner {
 .js .animate-this,
 .js .animate-intro {
 	opacity: 0;
+	text-align: left;
 }
 
 .oldie .animate-this,
@@ -1791,7 +1792,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
@@ -2049,12 +2050,13 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
 }
 
 .about-profile p {
-	font-size: 1rem;
-	line-height: 1px;
+	font-size: 1.3rem;
+	line-height: 1.313;
 }
 
 /*  */
@@ -2070,6 +2072,7 @@ header .header-logo a {
 
 .about-services p.lead {
 	color: #757575;
+	font-size: 1.5rem;
 }
 
 .about-services ul.services {
@@ -2096,8 +2099,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
 }
 
 /*  */
@@ -2113,7 +2116,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 4rem;
 }
 
 /*  */
@@ -2789,7 +2792,7 @@ header .header-logo a {
 }
 
 #stats .stat .icon-part i {
-	font-size: 10rem;
+	font-size: 6rem;
 }
 
 /*  */
@@ -2797,7 +2800,7 @@ header .header-logo a {
 #stats .stat h5 {
 	color: #FFFFFF;
 	margin-top: 1.5rem;
-	font-size: 0.4rem;
+	font-size: 1rem;
 }
 
 /*  */
@@ -2806,7 +2809,7 @@ header .header-logo a {
 
 #stats .stat h3 {
 	color: #7c3b08;
-	font-size: 8.8rem;
+	font-size: 5.8rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin: 1.5rem 0 0 0;
