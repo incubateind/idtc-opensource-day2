@@ -812,7 +812,7 @@ input[type="button"] {
 	color: #222222;
 	text-decoration: none;
 	cursor: pointer;
-	text-align: center;
+	text-align: center !important;
 	white-space: nowrap;
 	border: none;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1792,7 +1792,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
