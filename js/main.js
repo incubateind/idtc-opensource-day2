@@ -1,281 +1,344 @@
-/* ===================================================================
- * Howdy - Main JS
- *
- * ------------------------------------------------------------------- */
-
+/* =====================================
+Template Name: Meheraj
+Author Name: Shakil Hossain
+Description: Meheraj is a modern Creative Personal Portfolio Template, you can use this template for your own personal portfolio,CV,Resume purpouse.
+Version:	1.1
+========================================*/   
+/*======================================
+[Start Activation Code]
+========================================
+	* One Page Nav
+	* Sticky JS
+	* Mobile Menu
+	* Social JS
+	* Service hover
+	* Isotop Active
+	* Counter JS
+	* Testimonial Carousel
+	* Blog Carousel
+	* Blog Slider
+	* Clients Carousel
+	* Wow JS
+	* Parallax JS
+	* Video Background
+	* Side Navigation
+	* Personal slider
+	* Extra JS
+	* Preloader JS
+========================================
+[End Activation Code]
+========================================*/ 
 (function ($) {
-  "use strict";
+	"use strict";
+    $(document).ready(function(){
+		
+		function Maheraz_Custom_JS() {
+			var windowS = $(window),
+				windowH = windowS.height(),
+				projecthoverS = $('.portfolio-hover'),
+				projecthoverH = projecthoverS.height(),
+				proejectdevide = (projecthoverH / 2);
+				projecthoverS.css({
+				marginTop: -proejectdevide,
+			});
+		}; 
+		
+		/*====================================
+		//  Onepage Nav
+		======================================*/ 
+		if ($.fn.onePageNav) {
+			$('.mainmenu .nav').onePageNav({
+				currentClass: 'active',
+				scrollSpeed: 1000,
+				easing: 'easeInOutQuart'
+			});
+		}
+		
+		/*====================================
+		// Sticky JS
+		======================================*/ 
+		jQuery(window).on('scroll', function() {
+			if ($(this).scrollTop() > 1) {
+				$('#header').addClass("sticky");
+			} else {
+				$('#header').removeClass("sticky");
+			}
+		});
+			
+		/*====================================
+		// 	Mobile Menu
+		======================================*/ 	
+		$('.menu').slicknav({
+			prependTo:".mobile-nav",
+			closeOnClick:true,
+		});
+		
+		/*====================================
+		// 	Social JS
+		======================================*/ 	
+		$('.social-icon li a').on( "click", function(){
+			$('.social').toggleClass('active');
+		});
+		
+		
+		/*====================================
+		// Service Hover
+		======================================*/ 
+		$('.single-service').on('mouseenter', function(){
+			$(' .single-service').removeClass('active');
+			$(this).addClass('active');
+		});
+		
+		/*====================================
+		// Isotop Active
+		======================================*/
+		$(window).on('load', function() {
+			Maheraz_Custom_JS();		
+			
+			if ($.fn.isotope) {
+                $(".isotop-active").isotope({
+                    filter: '*',
+                });
 
-  var cfg = {
-      defAnimation: "fadeInUp", // default css animation
-      scrollDuration: 800, // smoothscroll duration
-      statsDuration: 4000, // stats animation duration
-    },
-    $WIN = $(window);
+					$('.portfolio-nav ul li').on('click', function() {
+                    $(".portfolio-nav ul li").removeClass("active");
+                    $(this).addClass("active");
 
-  /* Preloader
-   * -------------------------------------------------- */
-  var ssPreloader = function () {
-    $WIN.on("load", function () {
-      // force page scroll position to top at page refresh
-      $("html, body").animate({ scrollTop: 0 }, "normal");
-
-      // will first fade out the loading animation
-      $("#loader").fadeOut("slow", function () {
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
-      });
-    });
-  };
-
-  /* FitVids
-	------------------------------------------------------ */
-  var ssFitVids = function () {
-    $(".fluid-video-wrapper").fitVids();
-  };
-
-  /*	Masonry
-	------------------------------------------------------ */
-  var ssMasonryFolio = function () {
-    var containerBricks = $(".bricks-wrapper");
-
-    containerBricks.imagesLoaded(function () {
-      containerBricks.masonry({
-        itemSelector: ".brick",
-        resize: true,
-      });
-    });
-  };
-
-  /*	Light Gallery
-	------------------------------------------------------- */
-  var ssLightGallery = function () {
-    $("#folio-wrap").lightGallery({
-      showThumbByDefault: false,
-      hash: false,
-      selector: ".item-wrap",
-    });
-  };
-
-  /* Menu on Scrolldown
-   * ------------------------------------------------------ */
-  var ssMenuOnScrolldown = function () {
-    var menuTrigger = $("#header-menu-trigger");
-
-    $WIN.on("scroll", function () {
-      if ($WIN.scrollTop() > 150) {
-        menuTrigger.addClass("opaque");
-      } else {
-        menuTrigger.removeClass("opaque");
-      }
-    });
-  };
-
-  /* OffCanvas Menu
-   * ------------------------------------------------------ */
-  var ssOffCanvas = function () {
-    var menuTrigger = $("#header-menu-trigger"),
-      nav = $("#menu-nav-wrap"),
-      closeButton = nav.find(".close-button"),
-      siteBody = $("body"),
-      mainContents = $("section, footer");
-
-    // open-close menu by clicking on the menu icon
-    menuTrigger.on("click", function (e) {
-      e.preventDefault();
-      menuTrigger.toggleClass("is-clicked");
-      siteBody.toggleClass("menu-is-open");
-    });
-
-    // close menu by clicking the close button
-    closeButton.on("click", function (e) {
-      e.preventDefault();
-      menuTrigger.trigger("click");
-    });
-
-    // close menu clicking outside the menu itself
-    siteBody.on("click", function (e) {
-      if (
-        !$(e.target).is(
-          "#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span"
-        )
-      ) {
-        menuTrigger.removeClass("is-clicked");
-        siteBody.removeClass("menu-is-open");
-      }
-    });
-  };
-
-  /* Smooth Scrolling
-   * ------------------------------------------------------ */
-  var ssSmoothScroll = function () {
-    $(".smoothscroll").on("click", function (e) {
-      var target = this.hash,
-        $target = $(target);
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: $target.offset().top,
-          },
-          cfg.scrollDuration,
-          "swing"
-        )
-        .promise()
-        .done(function () {
-          // check if menu is open
-          if ($("body").hasClass("menu-is-open")) {
-            $("#header-menu-trigger").trigger("click");
-          }
-
-          window.location.hash = target;
-        });
-    });
-  };
-
-  /* Placeholder Plugin Settings
-   * ------------------------------------------------------ */
-  var ssPlaceholder = function () {
-    $("input, textarea, select").placeholder();
-  };
-
-  /* Stat Counter
-   *------------------------------------------------------- */
-  var ssStatCounter = function () {
-    var statSection = $("#stats"),
-      stats = $(".stat-count");
-
-    statSection.waypoint({
-      handler: function (direction) {
-        if (direction === "down") {
-          stats.each(function () {
-            var $this = $(this);
-
-            $({ Counter: 0 }).animate(
-              { Counter: $this.text() },
-              {
-                duration: cfg.statsDuration,
-                easing: "swing",
-                step: function (curValue) {
-                  $this.text(Math.ceil(curValue));
-                },
-              }
-            );
-          });
-        }
-
-        // trigger once only
-        this.destroy();
-      },
-      offset: "90%",
-    });
-  };
-
-  /* Alert Boxes
-  	------------------------------------------------------- */
-  var ssAlertBoxes = function () {
-    $(".alert-box").on("click", ".close", function () {
-      $(this).parent().fadeOut(500);
-    });
-  };
-
-  /* Animations
-   * ------------------------------------------------------- */
-  var ssAnimations = function () {
-    if (!$("html").hasClass("no-cssanimations")) {
-      $(".animate-this").waypoint({
-        handler: function (direction) {
-          var defAnimationEfx = cfg.defAnimation;
-
-          if (direction === "down" && !$(this.element).hasClass("animated")) {
-            $(this.element).addClass("item-animate");
-
-            setTimeout(function () {
-              $("body .animate-this.item-animate").each(function (ctr) {
-                var el = $(this),
-                  animationEfx = el.data("animate") || null;
-
-                if (!animationEfx) {
-                  animationEfx = defAnimationEfx;
-                }
-
-                setTimeout(function () {
-                  el.addClass(animationEfx + " animated");
-                  el.removeClass("item-animate");
-                }, ctr * 50);
-              });
-            }, 100);
-          }
-
-          // trigger once only
-          this.destroy();
-        },
-        offset: "95%",
-      });
-    }
-  };
-
-  /* Intro Animation
-   * ------------------------------------------------------- */
-  var ssIntroAnimation = function () {
-    $WIN.on("load", function () {
-      if (!$("html").hasClass("no-cssanimations")) {
-        setTimeout(function () {
-          $(".animate-intro").each(function (ctr) {
-            var el = $(this),
-              animationEfx = el.data("animate") || null;
-
-            if (!animationEfx) {
-              animationEfx = cfg.defAnimation;
+                    var selector = $(this).attr('data-filter');
+                    $(".isotop-active").isotope({
+                        filter: selector,
+                        animationOptions: {
+                            duration: 750,
+                            easing: 'easeInOutQuart',
+                            queue: false,
+                        }
+                    });
+                    return false;
+                });
             }
+		});
+		
+		/*====================================
+			Counter JS
+		======================================*/ 
+		$('.count').counterUp({
+			time: 1000
+		});
+		
+		/*====================================
+		// Testimonial Carousel
+		======================================*/ 	
+		$(".testimonial-carousel").owlCarousel({
+			loop:true,
+			autoplay:false,
+			smartSpeed: 600,
+			animateOut: 'flipOutX',
+			animateIn: 'flipInX',
+			margin:30,
+			nav:true,
+			dots:false,
+			items: 1,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		});	
+		
+		/*====================================
+		// Blog Carousel
+		======================================*/ 	
+		$(".blog-carousel").owlCarousel({
+			loop:true,
+			autoplay:false,
+			autoplayTimeout:4000,
+			smartSpeed: 600,
+			margin:15,
+			nav:false,
+			dots:true,
+			responsive:{
+				300: {
+					items: 1,
+				},
+				480: {
+					items: 1,
+				},
+				768: {
+					items: 2,
+				},
+				1170: {
+					items: 3,
+				},
+			}
+		});	
+		
+		/*====================================
+		// Blog Slider
+		======================================*/ 	
+		$("#blog .slide").owlCarousel({
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:3500,
+			smartSpeed: 600,
+			mouseDrag: true,
+			nav:true,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+			dots:true,
+			responsive:{
+				320: {
+					items: 1,
+					dots:false,
+					nav:false,
+				},
+				480: {
+					items: 1,
+					dots:false,
+					nav:false,
+				},
+				768: {
+					items: 1,
+				},
+				1170: {
+					items: 1,
+				},
+			}
+		});	
+		
+		
+		/*====================================
+		// clients Carousel
+		======================================*/ 	
+		$(".clients-slider").owlCarousel({
+			loop:true,
+			autoplay:false,
+			smartSpeed: 600,
+			margin:30,
+			nav:false,
+			dots:false,
+			responsive:{
+				300: {
+					items: 1,
+				},
+				480: {
+					items: 2,
+				},
+				768: {
+					items: 3,
+				},
+				1170: {
+					items: 5,
+				},
+			}
+		});	
+		
+		/*====================================
+			Wow JS
+		======================================*/		
+		var window_width = $(window).width();   
+			if(window_width > 767){
+            new WOW().init();
+		}
+		
+		/*======================================
+		// Parallax JS
+		======================================*/ 
+		 $(window).stellar({
+            responsive: true,
+            positionProperty: 'position',
+            horizontalScrolling: false
+        });
+		
+		
+		/*====================================
+		// 	Side Navigation
+		======================================*/ 	
+		$('.side-icon a').on( "click", function(){
+			$('#header').toggleClass('active');
+		});
+		
+		/*====================================
+		// Personal Slider
+		======================================*/ 	
+		$(".personal-main.slide").owlCarousel({
+			loop:true,
+			autoplay:true,
+			animateIn: 'fadeIn',
+			animateOut: 'fadeOut',
+			smartSpeed: 600,
+			autoplayTimeout:4000,
+			mouseDrag: false,
+			margin:30,
+			nav:false,
+			dots:true,
+			items: 1,
+		});	
+		
+		/*====================================
+		// Portfolio Single
+		======================================*/ 	
+		$(".portfolio-single.slider").owlCarousel({
+			loop:true,
+			autoplay:true,
+			smartSpeed: 600,
+			autoplayTimeout:3500,
+			mouseDrag: true,
+			margin:30,
+			nav:true,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+			dots:false,
+			items: 1,
+		});	
+		
+		/*====================================
+		// Related Portfolio
+		======================================*/ 
+		$(".portfolio-related").owlCarousel({
+			loop:true,
+			autoplay:true,
+			smartSpeed: 600,
+			autoplayTimeout:3500,
+			mouseDrag: true,
+			nav:false,
+			dots:false,
+			items: 1,
+			responsive:{
+				300: {
+					items: 1,
+				},
+				480: {
+					items: 1,
+				},
+				768: {
+					items: 2,
+				},
+				1170: {
+					items: 3,
+				},
+			}
+		});	
 
-            setTimeout(function () {
-              el.addClass(animationEfx + " animated");
-            }, ctr * 300);
-          });
-        }, 100);
-      }
+		
+		/*====================================
+		Extra JS
+		======================================*/
+		$('.btn, .arrow a, .slicknav_menu li a').on('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 20 
+			}, 1000, 'easeInOutQuart');
+			event.preventDefault();
+		});
+		
+		
+		/*====================================
+			Video Background
+		======================================*/
+		$('.player').mb_YTPlayer();		
+		
     });
-  };
-
-  /* Back to Top
-   * ------------------------------------------------------ */
-  var ssBackToTop = function () {
-    var pxShow = 500, // height on which the button will show
-      fadeInTime = 400, // how slow/fast you want the button to show
-      fadeOutTime = 400, // how slow/fast you want the button to hide
-      scrollSpeed = 300, // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-      goTopButton = $("#go-top");
-
-    // Show or hide the sticky footer button
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() >= pxShow) {
-        goTopButton.fadeIn(fadeInTime);
-      } else {
-        goTopButton.fadeOut(fadeOutTime);
-      }
-    });
-  };
-
-  /* Initialize
-   * ------------------------------------------------------ */
-  (function ssInit() {
-    ssPreloader();
-    ssFitVids();
-    ssMasonryFolio();
-    ssLightGallery();
-    ssMenuOnScrolldown();
-    ssOffCanvas();
-    ssSmoothScroll();
-    ssPlaceholder();
-    ssStatCounter();
-    ssAlertBoxes();
-    ssAnimations();
-    ssIntroAnimation();
-    ssBackToTop();
-  })();
-})(jQuery);
+	
+	/*======================================
+	// Preloader
+	======================================*/ 	
+		$(window).load(function(){
+				$('.loader').fadeOut('slow', function(){
+				$(this).remove();
+			});
+		});
+})(jQuery);	
