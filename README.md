@@ -15,5 +15,7 @@ After following the steps you will have the GitHub pages link.
 <br/>
 <br/>
 Note: After completing this task you will have your own Portfolio Page published on GitHub pages.
+<br/>
+[Live Site](https://ajaycodes.co/idtc-opensource-day2/)
 
 ![](https://storage.googleapis.com/incind/idtc-day2-task-minspNieBZ.png)
