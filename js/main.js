@@ -1,281 +1,181 @@
-/* ===================================================================
- * Howdy - Main JS
- *
- * ------------------------------------------------------------------- */
+(function($) {
+	"use strict";
 
-(function ($) {
-  "use strict";
+	$(".history-scroller").niceScroll({
+		cursorwidth: "10px",
+		background: "#0d1015",
+		cursorborder: "0",
+		cursorborderradius: "0",
+		autohidemode: false,
+		zindex: 5
+	});
 
-  var cfg = {
-      defAnimation: "fadeInUp", // default css animation
-      scrollDuration: 800, // smoothscroll duration
-      statsDuration: 4000, // stats animation duration
-    },
-    $WIN = $(window);
+	$(".testimonials").owlCarousel({
+		margin: 30,
+		autoPlay: true,
+		autoPlay : 5000,
+		responsive: {
+			0: {
+				items: 1
+			},
+			480: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1024: {
+				items: 2
+			}
+		}
+	});
+	
+	animatedProgressBar();
+	windowHieght();
+	contactFormValidation();
+	previewPannel();
 
-  /* Preloader
-   * -------------------------------------------------- */
-  var ssPreloader = function () {
-    $WIN.on("load", function () {
-      // force page scroll position to top at page refresh
-      $("html, body").animate({ scrollTop: 0 }, "normal");
+	function animatedProgressBar () {
+		$(".progress").each(function() {
+			var skillValue = $(this).find(".skill-lavel").attr("data-skill-value");
+			$(this).find(".bar").animate({
+				width: skillValue
+			}, 1500, "easeInOutExpo");
 
-      // will first fade out the loading animation
-      $("#loader").fadeOut("slow", function () {
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
-      });
-    });
-  };
+			$(this).find(".skill-lavel").text(skillValue);
+		});
+	}
 
-  /* FitVids
-	------------------------------------------------------ */
-  var ssFitVids = function () {
-    $(".fluid-video-wrapper").fitVids();
-  };
+	function windowHieght(){
+		if ( $(window).height() <=768 ) {
+			$(".pt-table").addClass("desktop-768");
+		} else {
+			$(".pt-table").removeClass("desktop-768");
+		}
+	}
+	
+	/*----------------------------------------
+		contact form validation
+	------------------------------------------*/
+	function contactFormValidation() {
+		$(".contact-form").validate({
+		    rules: {
+		        name: {
+		            required: true
+		        },
+		        email: {
+		            required: true,
+		            email: true
+		        },
+		        subject: {
+		            required: true
+		        },
+		        message: {
+		            required: true
+		        }
+		    },
+		    messages: {
+		        name: {
+		            required: "Write your name here"
+		        },
+		        email: {
+		            required: "No email, no support"
+		        },
+		        subject: {
+		            required: "you have a reason to contact, write it here"
+		        },
+		        message: {
+		            required: "You have to write something to send this form"
+		        }
+		    },
+		    submitHandler: function(form) {
+		        $(form).ajaxSubmit({
+		            type: "POST",
+		            data: $(form).serialize(),
+		            url : "mail.php",
+		            success: function() {
+		                $(".contact-form").fadeTo( "slow", 1, function() {
+		                    $(".contact-form .msg-success").slideDown();
+		                });
+		                $(".contact-form").resetForm();
+		            },
+		            error: function() {
+		                $(".contact-form").fadeTo( "slow", 1, function() {
+		                    $(".contact-form .msg-failed").slideDown();
+		                });
+		            }
+		        });
+		    },
+		    errorPlacement: function(error, element) {
+		        element.after(error);
+		        error.hide().slideDown();
+		    }
+		}); 
+	}
 
-  /*	Masonry
-	------------------------------------------------------ */
-  var ssMasonryFolio = function () {
-    var containerBricks = $(".bricks-wrapper");
+	/*----------------------------------------
+		Isotope Masonry
+	------------------------------------------*/
+	function isotopeMasonry() {
+		$(".isotope-gutter").isotope({
+		    itemSelector: '[class^="col-"]',
+		    percentPosition: true
+		});
+		$(".isotope-no-gutter").isotope({
+		    itemSelector: '[class^="col-"]',
+		    percentPosition: true,
+		    masonry: {
+		        columnWidth: 1
+		    }
+		});
 
-    containerBricks.imagesLoaded(function () {
-      containerBricks.masonry({
-        itemSelector: ".brick",
-        resize: true,
-      });
-    });
-  };
+		$(".filter a").on("click", function(){
+		    $(".filter a").removeClass("active");
+		    $(this).addClass("active");
+		   // portfolio fiter
+		    var selector = $(this).attr("data-filter");
+		    $(".isotope-gutter").isotope({
+		        filter: selector,
+		        animationOptions: {
+		            duration: 750,
+		            easing: "linear",
+		            queue: false
+		        }
+		    });
+		    return false;
+		});
+	}
 
-  /*	Light Gallery
-	------------------------------------------------------- */
-  var ssLightGallery = function () {
-    $("#folio-wrap").lightGallery({
-      showThumbByDefault: false,
-      hash: false,
-      selector: ".item-wrap",
-    });
-  };
-
-  /* Menu on Scrolldown
-   * ------------------------------------------------------ */
-  var ssMenuOnScrolldown = function () {
-    var menuTrigger = $("#header-menu-trigger");
-
-    $WIN.on("scroll", function () {
-      if ($WIN.scrollTop() > 150) {
-        menuTrigger.addClass("opaque");
-      } else {
-        menuTrigger.removeClass("opaque");
-      }
-    });
-  };
-
-  /* OffCanvas Menu
-   * ------------------------------------------------------ */
-  var ssOffCanvas = function () {
-    var menuTrigger = $("#header-menu-trigger"),
-      nav = $("#menu-nav-wrap"),
-      closeButton = nav.find(".close-button"),
-      siteBody = $("body"),
-      mainContents = $("section, footer");
-
-    // open-close menu by clicking on the menu icon
-    menuTrigger.on("click", function (e) {
-      e.preventDefault();
-      menuTrigger.toggleClass("is-clicked");
-      siteBody.toggleClass("menu-is-open");
-    });
-
-    // close menu by clicking the close button
-    closeButton.on("click", function (e) {
-      e.preventDefault();
-      menuTrigger.trigger("click");
-    });
-
-    // close menu clicking outside the menu itself
-    siteBody.on("click", function (e) {
-      if (
-        !$(e.target).is(
-          "#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span"
-        )
-      ) {
-        menuTrigger.removeClass("is-clicked");
-        siteBody.removeClass("menu-is-open");
-      }
-    });
-  };
-
-  /* Smooth Scrolling
-   * ------------------------------------------------------ */
-  var ssSmoothScroll = function () {
-    $(".smoothscroll").on("click", function (e) {
-      var target = this.hash,
-        $target = $(target);
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: $target.offset().top,
-          },
-          cfg.scrollDuration,
-          "swing"
-        )
-        .promise()
-        .done(function () {
-          // check if menu is open
-          if ($("body").hasClass("menu-is-open")) {
-            $("#header-menu-trigger").trigger("click");
-          }
-
-          window.location.hash = target;
-        });
-    });
-  };
-
-  /* Placeholder Plugin Settings
-   * ------------------------------------------------------ */
-  var ssPlaceholder = function () {
-    $("input, textarea, select").placeholder();
-  };
-
-  /* Stat Counter
-   *------------------------------------------------------- */
-  var ssStatCounter = function () {
-    var statSection = $("#stats"),
-      stats = $(".stat-count");
-
-    statSection.waypoint({
-      handler: function (direction) {
-        if (direction === "down") {
-          stats.each(function () {
-            var $this = $(this);
-
-            $({ Counter: 0 }).animate(
-              { Counter: $this.text() },
-              {
-                duration: cfg.statsDuration,
-                easing: "swing",
-                step: function (curValue) {
-                  $this.text(Math.ceil(curValue));
-                },
-              }
-            );
-          });
-        }
-
-        // trigger once only
-        this.destroy();
-      },
-      offset: "90%",
-    });
-  };
-
-  /* Alert Boxes
-  	------------------------------------------------------- */
-  var ssAlertBoxes = function () {
-    $(".alert-box").on("click", ".close", function () {
-      $(this).parent().fadeOut(500);
-    });
-  };
-
-  /* Animations
-   * ------------------------------------------------------- */
-  var ssAnimations = function () {
-    if (!$("html").hasClass("no-cssanimations")) {
-      $(".animate-this").waypoint({
-        handler: function (direction) {
-          var defAnimationEfx = cfg.defAnimation;
-
-          if (direction === "down" && !$(this.element).hasClass("animated")) {
-            $(this.element).addClass("item-animate");
-
-            setTimeout(function () {
-              $("body .animate-this.item-animate").each(function (ctr) {
-                var el = $(this),
-                  animationEfx = el.data("animate") || null;
-
-                if (!animationEfx) {
-                  animationEfx = defAnimationEfx;
-                }
-
-                setTimeout(function () {
-                  el.addClass(animationEfx + " animated");
-                  el.removeClass("item-animate");
-                }, ctr * 50);
-              });
-            }, 100);
-          }
-
-          // trigger once only
-          this.destroy();
-        },
-        offset: "95%",
-      });
-    }
-  };
-
-  /* Intro Animation
-   * ------------------------------------------------------- */
-  var ssIntroAnimation = function () {
-    $WIN.on("load", function () {
-      if (!$("html").hasClass("no-cssanimations")) {
-        setTimeout(function () {
-          $(".animate-intro").each(function (ctr) {
-            var el = $(this),
-              animationEfx = el.data("animate") || null;
-
-            if (!animationEfx) {
-              animationEfx = cfg.defAnimation;
-            }
-
-            setTimeout(function () {
-              el.addClass(animationEfx + " animated");
-            }, ctr * 300);
-          });
-        }, 100);
-      }
-    });
-  };
-
-  /* Back to Top
-   * ------------------------------------------------------ */
-  var ssBackToTop = function () {
-    var pxShow = 500, // height on which the button will show
-      fadeInTime = 400, // how slow/fast you want the button to show
-      fadeOutTime = 400, // how slow/fast you want the button to hide
-      scrollSpeed = 300, // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-      goTopButton = $("#go-top");
-
-    // Show or hide the sticky footer button
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() >= pxShow) {
-        goTopButton.fadeIn(fadeInTime);
-      } else {
-        goTopButton.fadeOut(fadeOutTime);
-      }
-    });
-  };
-
-  /* Initialize
-   * ------------------------------------------------------ */
-  (function ssInit() {
-    ssPreloader();
-    ssFitVids();
-    ssMasonryFolio();
-    ssLightGallery();
-    ssMenuOnScrolldown();
-    ssOffCanvas();
-    ssSmoothScroll();
-    ssPlaceholder();
-    ssStatCounter();
-    ssAlertBoxes();
-    ssAnimations();
-    ssIntroAnimation();
-    ssBackToTop();
-  })();
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	    Preview Pannel
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+	function previewPannel() {
+	    $(".switcher-trigger").on("click", function() {
+	        $(".preview-wrapper").toggleClass("extend");
+	        return false;
+	    });
+	    if ($(window).width() < 768 ) {            
+	        //$(".preview-wrapper").removeClass("extend");            
+	    }
+	    $(".color-options li").on("click", function(){
+	        if ($("body").hasClass("back-step")) {
+	            $("#color-changer").attr({
+	                "href":"../css/colors/"+$(this).attr("data-color")+".css"
+	            });
+	        }else {
+	            $("#color-changer").attr({
+	                "href":"css/colors/"+$(this).attr("data-color")+".css"
+	            });
+	        }
+	        return false;
+	    });
+	}
+	
+	$(window).on("load", function() {
+		$(".preloader").addClass("active");
+		isotopeMasonry();
+		setTimeout(function () {
+		    $(".preloader").addClass("done");
+		}, 1500);
+	});
 })(jQuery);
