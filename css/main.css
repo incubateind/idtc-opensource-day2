@@ -2052,13 +2052,13 @@ header .header-logo a {
 
 .about-profile p.lead {
 	color: #636363;
-	font-size: 3rem;
+	/* font-size: 3rem; */
 }
 
-.about-profile p {
+/* .about-profile p {
 	font-size: 1rem;
 	line-height: 1px;
-}
+} */
 
 /*  */
 
@@ -2099,8 +2099,8 @@ header .header-logo a {
 .about-services ul.services li p {
 	margin-bottom: 1.5rem;
 	color: #4f4f4f;
-	font-size: 10px;
-	line-height: 1rem;
+	/* font-size: 10px;
+	line-height: 1rem; */
 }
 
 /*  */
@@ -2116,7 +2116,7 @@ header .header-logo a {
 /*  */
 
 .about-services ul.services .icon-wrap i {
-	font-size: 10rem;
+	font-size: 5rem;
 }
 
 /*  */
