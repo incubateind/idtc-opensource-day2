@@ -638,7 +638,7 @@ select {
 	padding: 1.5rem 0;
 	border: 0;
 	outline: none;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	color: #313131;
 	font-family: "montserrat-regular", sans-serif;
 	font-size: 1.5rem;
@@ -1507,7 +1507,7 @@ header .header-logo a {
 	z-index: 800;
 	overflow-y: auto;
 	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 	-webkit-transform: translateX(100%);
 	-ms-transform: translateX(100%);
 	transform: translateX(100%);
@@ -1724,6 +1724,7 @@ header .header-logo a {
 	position: relative;
 	padding-top: 4.2rem;
 	padding-bottom: 15rem;
+	
 }
 
 .home-content-tablecell h3 {
@@ -1733,13 +1734,14 @@ header .header-logo a {
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 	margin: 0 0 0 .3rem;
+	text-align: left;
 }
 
 /*  */
 
 .home-content-tablecell h1 {
 	font-family: "librebaskerville-bold", serif;
-	font-size: 2.2rem;
+	font-size: 4.2rem;
 	line-height: 1.5;
 	color: #FFFFFF;
 }
@@ -1776,6 +1778,7 @@ header .header-logo a {
 	margin-left: .3rem;
 }
 
+
 .scroll-icon {
 	position: absolute;
 	width: 60px;
@@ -1791,7 +1794,7 @@ header .header-logo a {
 /*  */
 
 .home-bottom-text {
-	text-align: right;
+	text-align: left;
 }
 
 /*  */
