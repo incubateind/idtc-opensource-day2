@@ -1,0 +1,1 @@
+This directory contains all the components and app's Js and CSS files
