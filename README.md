@@ -1,5 +1,7 @@
 # idtc-opensource-day2
 
+Portfolio website link: https://rid17pawar.github.io/
+
 **Step-1:** Fork the repository.<br/>
 **Step-2:** Look at the reference picture provided.<br/>
 **Step-3:** Find the issues in the code.<br/>
