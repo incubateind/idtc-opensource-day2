@@ -2792,7 +2792,7 @@ header .header-logo a {
 }
 
 #stats .stat .icon-part i {
-	font-size: 10rem;
+	font-size: 5rem;
 }
 
 /*  */
@@ -2800,7 +2800,7 @@ header .header-logo a {
 #stats .stat h5 {
 	color: #FFFFFF;
 	margin-top: 1.5rem;
-	font-size: 0.4rem;
+	font-size: 1.4rem;
 }
 
 /*  */
@@ -2809,7 +2809,7 @@ header .header-logo a {
 
 #stats .stat h3 {
 	color: #7c3b08;
-	font-size: 8.8rem;
+	font-size: 4.8rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	margin: 1.5rem 0 0 0;
