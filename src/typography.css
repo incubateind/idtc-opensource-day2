@@ -1,0 +1,56 @@
+.HomePage{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:80%;
+}
+
+.hero-text{
+text-align: center;
+    font-size:3.2rem;
+
+}
+
+.hero-text span{
+    color:blueviolet;
+}
+
+.h-sub-text{
+    text-align: left;
+    margin-top: 12px;
+    display:block;
+margin-left: 20px;
+
+}
+
+.icons {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1.5rem 0;
+}
+
+.icon-holder:not(:last-child){
+    margin-right: 1rem;
+}
+
+.icon{
+    font-size: 2.3rem;
+   color: inherit;
+    margin-top:18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.ig:hover{
+    color:red;
+}
+.gh:hover{
+    color:red;
+}
+.em:hover{
+    color:red;
+}
+.li:hover{
+    color:red;
+}

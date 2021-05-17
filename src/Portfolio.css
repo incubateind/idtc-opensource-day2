@@ -1,0 +1,27 @@
+.portfolio-container{
+   width:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+
+.image-data img{
+    width:100%;
+    height:40vh;
+    object-fit: cover;
+}
+
+.hover-items{
+    list-style: none;
+}
+
+.hover-items h5{
+    font-size:1.7rem;
+    font-weight:400;
+    font-family:inherit;
+    color: whitesmoke;
+    transition: all .4s ease-in-out;
+}
+.hover-items h5:hover{
+    color:blueviolet;
+}

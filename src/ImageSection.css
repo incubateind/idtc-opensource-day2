@@ -1,0 +1,99 @@
+.image-section{
+    display: flex;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+}
+.img{
+
+    height:60vh;
+}
+.img img{
+    margin-top: 5rem;
+    width:100%;
+    object-fit:cover;
+    background-blend-mode: lighten;
+
+}
+
+.about-info{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.about-info h4{
+    font-size: 1rem;
+}
+
+.about-info p{
+    padding: 1rem 0;
+}
+
+.hover-me{
+    margin-top:-10px;
+}
+
+.about-details{
+    display:none;
+}
+.hover-me:hover + .about-details{
+    cursor: pointer;
+    display:block;
+}
+
+.about-details:hover{
+    display:block;
+}
+
+.name-details{
+    display:flex;
+}
+.name-details p{
+    padding: .3rem 0;
+}
+
+.p-margin{
+    margin-left: .5rem;
+}
+
+.btn-cv{
+
+    margin-top: 1.6rem;
+    margin-left: -6.5rem;
+}
+
+.btn{
+    padding:1rem 2rem;
+    background-color:blueviolet;
+    outline:none;
+    border:none;
+    font-family: inherit;
+    font-size: inherit;
+    color:inherit;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-radius: 2.8px;
+    letter-spacing: 2px;
+}
+
+.btn::before{
+    position: absolute;
+    content: "";
+    width:0;
+    height: .3rem;
+    left:0;
+    bottom:0;
+    background-color: red ;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.btn:hover::before{
+    width:100%
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    row-gap:1.8rem;
+    margin:4rem 0;
+}
